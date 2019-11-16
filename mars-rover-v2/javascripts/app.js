@@ -46,24 +46,25 @@ function moveForward(rover){
   console.log("moveForward was called")
 }
 if(rover.direction =="N"){
-  rover.y =
-  rover.x =
+  rover.y =-1,
+  rover.x =0
 }
 
-if else(rover.direction =="N"){
-  rover.y =
-  rover.x =
+else if(rover.direction =="E"){
+  rover.y =0,
+  rover.x =1
 }
 
-if else (rover.direction =="N"){
-  rover.y =
-  rover.x =
+else if (rover.direction =="S"){
+  rover.y =1,
+  rover.x =0
 }
 
-if else(rover.direction =="N"){
-  rover.y =
-  rover.x =
+else if(rover.direction =="W"){
+  rover.y =0,
+  rover.x =-1
 }
+
 
 
 
