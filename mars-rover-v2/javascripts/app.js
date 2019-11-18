@@ -4,6 +4,7 @@ let rover ={
   direction = "N",
   x:0,
   y:0,
+  travelLog: []
 };
 
 // ======================
@@ -43,6 +44,7 @@ else if(rover.direction =="W"){
 
 
 function moveForward(rover){
+  rover.travelLog.push(`${rover.x}, ${rover.y}`)
   console.log("moveForward was called")
 }
 if(rover.direction =="N"){
@@ -67,4 +69,17 @@ else if(rover.direction =="W"){
 
 
 
+let roverPath = ["r","f","f","r","f","f","l","f","r","f","f"]
+roverPath.forEach((eachPath)=>{
+  if (roverPath = "f"){
+    moveForward(rover) 
+  }
+  else if(roverPath = "l"){
+    turnLeft(rover)
+  }
+  else if(roverPath = "r"){
+    turnRight(rover)
+  }
+});
 
+console.log(roverPath)
